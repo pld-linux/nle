@@ -3,7 +3,7 @@ Summary:	Logo editor for Nokia cellular phones
 Summary(pl):	Edytor logo dla telefonów komórkowych Nokia
 Name:		nle
 Version:	0.0.1
-Release:	5
+Release:	6
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.mimuw.edu.pl/People/lczajka/nle/%{name}-%{version}-%{rel}.tgz
@@ -11,6 +11,7 @@ Source0:	ftp://ftp.mimuw.edu.pl/People/lczajka/nle/%{name}-%{version}-%{rel}.tgz
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:		%{name}-gettext.patch
+Patch1:		%{name}-pixmapsdir.patch
 URL:		http://www.mimuw.edu.pl/~lczajka/nle/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -29,6 +30,7 @@ Edytor logo dla telefonów Nokia pozwala na edycjê plików nol oraz ngg.
 %prep
 %setup -q -n %{name}
 %patch0 -p1
+%patch1 -p1
 
 %build
 %{__libtoolize}
@@ -52,6 +54,7 @@ install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+rm -rf $RPM_BUILD_ROOT%{_datadir}/nle
 install pixmaps/* $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}
 
 %clean
