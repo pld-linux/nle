@@ -3,12 +3,11 @@ Summary:	Logo editor for Nokia cellular phones
 Summary(pl):	Edytor logo dla telefonów komórkowych Nokia
 Name:		nle
 Version:	0.0.1
-Release:	1
+Release:	2
 License:	GPL
 Source0:	ftp://ftp.mimuw.edu.pl/People/lczajka/nle/%{name}-%{version}-%{rel}.tgz
 URL:		http://www.mimuw.edu.pl/~lczajka/nle/
 Group:		X11/Applications
-######		/home/mick3y/rpm/SOURCES/rpm.groups: no such file
 BuildRequires:	XFree86-devel
 BuildRequires:	gtk+-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
