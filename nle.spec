@@ -34,7 +34,7 @@ Edytor logo dla telefonów Nokia pozwala na edycjê plików nol oraz ngg.
 
 %build
 rm -f missing
-libtoolize --copy --force
+%{__libtoolize}
 gettextize --force --copy
 aclocal
 autoheader
