@@ -48,6 +48,7 @@ automake -a -c -f
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_pixmapsdir}/%{name},%{_applnkdir}/Utilities/}
+
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Utilities/
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}/
 
@@ -63,8 +64,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{_prefix}/share/applnk/Utilities/nle.desktop
-%{_prefix}/share/pixmaps/nle.xpm
 %doc *.gz examples/*
 %attr(755,root,root) %{_bindir}/nle
-%{_pixmapsdir}/nle
+%{_applnkdir}/Utilities/nle.desktop
+%{_pixmapsdir}/*
