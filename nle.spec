@@ -11,6 +11,7 @@ Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.mimuw.edu.pl/People/lczajka/nle/%{name}-%{version}-%{rel}.tgz
+# Source0-md5:	2d7304317736ce113979c6596982dfdc
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 URL:		http://www.mimuw.edu.pl/~lczajka/nle/
