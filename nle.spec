@@ -38,8 +38,8 @@ libtoolize --copy --force
 gettextize --force --copy
 aclocal
 autoheader
-autoconf
-automake -a -c -f
+%{__autoconf}
+%{__automake}
 %configure \
 	--with-gtk-exec-prefix=%{_prefix}
 
