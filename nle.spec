@@ -21,7 +21,6 @@ BuildRequires:	gtk+-devel
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 %define		_bindir		%{_prefix}/bin
 
 %description
