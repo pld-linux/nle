@@ -16,7 +16,9 @@ Source2:	%{name}.png
 URL:		http://www.mimuw.edu.pl/~lczajka/nle/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	gettext-devel
 BuildRequires:	gtk+-devel
+BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -35,8 +37,8 @@ Edytor logo dla telefonów Nokia pozwala na edycjê plików nol oraz ngg.
 %build
 rm -f missing
 %{__libtoolize}
-gettextize --force --copy
-aclocal
+%{__gettextize}
+%{__aclocal}
 autoheader
 %{__autoconf}
 %{__automake}
@@ -57,14 +59,12 @@ install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}/
 
 install pixmaps/* $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}
 
-gzip -9nf AUTHORS ChangeLog
-
 %clean
 rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz examples/*
+%doc AUTHORS ChangeLog examples/*
 %attr(755,root,root) %{_bindir}/nle
 %{_applnkdir}/Utilities/nle.desktop
 %{_pixmapsdir}/*
