@@ -12,7 +12,7 @@ License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.mimuw.edu.pl/People/lczajka/nle/%{name}-%{version}-%{rel}.tgz
 Source1:	%{name}.desktop
-Source2:	%{name}.xpm
+Source2:	%{name}.png
 URL:		http://www.mimuw.edu.pl/~lczajka/nle/
 BuildRequires:	autoconf
 BuildRequires:	automake
