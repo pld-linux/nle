@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Nokia Logo Editor
+Name[pl]=Nokia Logo Editor
+Type=Application
+Exec=nle
+Comment=Logo editor for Nokia cellular phones.
+Comment[pl]=Narzêdzie do edycji logo dla telefonów Nokia.
+icon=nle.xpm
