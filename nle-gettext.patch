@@ -1,0 +1,10 @@
+--- nle/configure.in.orig	2004-04-02 23:07:26.000000000 +0200
++++ nle/configure.in	2004-04-02 23:09:50.224653176 +0200
+@@ -8,6 +8,7 @@
+ AC_PROG_CC
+ AM_PROG_CC_STDC
+ AC_HEADER_STDC
++AM_GNU_GETTEXT
+ 
+ AM_PATH_GTK(1.2.0, ,
+             AC_MSG_ERROR(Cannot find GTK: Is gtk-config in path?))
