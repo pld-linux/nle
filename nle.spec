@@ -39,7 +39,7 @@ rm -f missing
 %{__libtoolize}
 %{__gettextize}
 %{__aclocal}
-autoheader
+%{__autoheader}
 %{__autoconf}
 %{__automake}
 %configure \
