@@ -7,5 +7,5 @@ icon=nle.png
 Terminal=false
 Type=Application
 Encoding=UTF-8
-Categories=Utility;
+Categories=GTK;Utility;
 # vi: encoding=utf-8
