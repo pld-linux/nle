@@ -1,0 +1,27 @@
+diff -u nle/src.orig/main.c nle/src/main.c
+--- nle/src.orig/main.c	2000-06-12 10:05:01.000000000 +0200
++++ nle/src/main.c	2005-02-16 23:40:14.882658080 +0100
+@@ -12,13 +12,6 @@
+ #include "interface.h"
+ #include "support.h"
+ 
+-#ifndef PACKAGE_DATA_DIR
+-#define PACKAGE_DATA_DIR /usr/share/nle
+-#endif
+-#ifndef PACKAGE_SOURCE_DIR
+-#define PACKAGE_SOURCE_DIR /usr/share/nle
+-#endif
+-
+ int
+ main (int argc, char *argv[])
+ {
+@@ -27,8 +20,7 @@
+   gtk_set_locale ();
+   gtk_init (&argc, &argv);
+ 
+-  add_pixmap_directory (PACKAGE_DATA_DIR "/pixmaps");
+-  add_pixmap_directory (PACKAGE_SOURCE_DIR "/pixmaps");
++  add_pixmap_directory ("/usr/share/pixmaps/nle");
+ 
+   /*
+    * The following code was added by Glade to create one of each component
