@@ -1,6 +1,6 @@
 %define		rel	2
 Summary:	Logo editor for Nokia cellular phones
-Summary(pl):	Edytor logo dla telefonów komórkowych Nokia
+Summary(pl.UTF-8):   Edytor logo dla telefonÃ³w komÃ³rkowych Nokia
 Name:		nle
 Version:	0.0.1
 Release:	6
@@ -24,8 +24,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Nokia Logo Editor allows you to edit nol and ngg files on a Nokia
 phone.
 
-%description -l pl
-Edytor logo dla telefonów Nokia pozwala na edycjê plików nol oraz ngg.
+%description -l pl.UTF-8
+Edytor logo dla telefonÃ³w Nokia pozwala na edycjÄ™ plikÃ³w nol oraz ngg.
 
 %prep
 %setup -q -n %{name}
