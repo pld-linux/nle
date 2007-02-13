@@ -1,6 +1,6 @@
 %define		rel	2
 Summary:	Logo editor for Nokia cellular phones
-Summary(pl.UTF-8):   Edytor logo dla telefonów komórkowych Nokia
+Summary(pl.UTF-8):	Edytor logo dla telefonów komórkowych Nokia
 Name:		nle
 Version:	0.0.1
 Release:	6
