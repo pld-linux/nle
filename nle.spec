@@ -58,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/nle
 install pixmaps/* $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}
 
 %clean
-rm -fr $RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
