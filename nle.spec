@@ -15,7 +15,7 @@ Patch1:		%{name}-pixmapsdir.patch
 URL:		http://www.mimuw.edu.pl/~lczajka/nle/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
